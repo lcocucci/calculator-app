@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator (vanilla js)</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <form id="calculator">
+      <input type="text" id="display" readonly />
+      <div class="buttons">
+        <!-- utilizamos la propiedad 'onclick' (evento) para interactuar con el 'display' -->
+        <input
+          class="button"
+          type="button"
+          value="1"
+          onclick="display.value=display.value+1"
+        />
+        <input
+          class="button"
+          type="button"
+          value="2"
+          onclick="display.value=display.value+2"
+        />
+        <input
+          class="button"
+          type="button"
+          value="3"
+          onclick="display.value=display.value+3"
+        />
+        <input
+          class="button"
+          type="button"
+          value="+"
+          onclick="display.value=display.value+'+'"
+        />
+        <!-- utilizamos la propiedad 'onclick' de forma mas abreviada (al ser un evento de js dentro de las "" utilizamos codigo js) -->
+        <input
+          class="button"
+          type="button"
+          value="4"
+          onclick="display.value+=4"
+        />
+        <input
+          class="button"
+          type="button"
+          value="5"
+          onclick="display.value+=5"
+        />
+        <input
+          class="button"
+          type="button"
+          value="6"
+          onclick="display.value+=6"
+        />
+        <input
+          class="button"
+          type="button"
+          value="-"
+          onclick="display.value+='-'"
+        />
+        <!-- utilizamos el DOM (Document Object Model) para interactuar con el documento HTML a través de javascript -->
+        <input id="b7" class="button" type="button" value="7" />
+        <input id="b8" class="button" type="button" value="8" />
+        <input id="b9" class="button" type="button" value="9" />
+        <input id="b*" class="button" type="button" value="*" />
+        <!-- volvemos a utiliza el atributo 'onclick' -->
+        <input
+          class="button"
+          type="button"
+          value="c"
+          onclick="display.value=''"
+        />
+        <input
+          class="button"
+          type="button"
+          value="0"
+          onclick="display.value+=0"
+        />
+        <input
+          class="button"
+          type="button"
+          value="="
+          onclick="display.value=eval(display.value)"
+        />
+        <input
+          class="button"
+          type="button"
+          value="/"
+          onclick="display.value+='/'"
+        />
+      </div>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
