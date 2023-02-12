@@ -19,8 +19,8 @@ body {
 }
 
 #calculator {
-  width: 300px;
-  height: 250px;
+  width: 18rem;
+  height: 19rem;
   border: 3px solid;
   margin: 100px auto;
   text-align: center;
@@ -30,14 +30,14 @@ body {
 }
 
 #display {
-  width: 270px;
+  width: 250px;
   height: 50px;
   border-radius: 20px;
   font-size: 30px;
   border: none;
   background-color: rgb(49, 1, 40);
   color: whitesmoke;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 15px;
   text-align: right;
   margin-bottom: 20px;
@@ -47,24 +47,7 @@ body {
   animation: gradient 15s ease infinite;
 }
 
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-}
-
-.button {
-  height: 30px;
-  font-size: 18px;
-  border: none;
-
-  background: linear-gradient(-45deg, #86f1ba, #9ccdef, #9c95f3, #e8fc9f);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-.button:hover {
-  background-color: #777;
-  transform: scale(0.9);
-  transition: transform 0.5s;
+.btn{
+  width: 3rem;
+  margin-bottom: .7rem;
 }
